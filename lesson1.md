@@ -4,7 +4,7 @@
 
 Пример программы:
 
-```
+```cpp
     #include <iostream>  
     int main(){
         // это комментарий
@@ -250,6 +250,28 @@ int min(int a, int b){
 ``` 
 
 Также передача по ссылке используется для передачи внуть функции больших объектов (векторов и массивов).
+
+Пример вызова функции:
+
+```cpp
+    #include <iostream>  
+    
+    int min(int a, int b){
+        int minNumber;
+        if (a < b)
+            minNumber = a;
+        else 
+            minNumber = b;
+        return minNumber;
+    }
+    
+    int main(){
+        int a, b;
+        std::cin >> a >> b;
+        std::cout << "Число " << min(a, b) << " меньше.";
+        return 0;
+    }
+```
 
 ## 7. Задания
 
